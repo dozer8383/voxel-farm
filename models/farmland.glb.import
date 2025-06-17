@@ -3,18 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://5x7wq0jdpkcn"
-path="res://.godot/imported/yellow-tree.glb-4b9504674e7f01fdd5a23555c2287c69.scn"
+uid="uid://b7ls4bl5dmx7k"
+path="res://.godot/imported/farmland.glb-5660fac5fcbc770a49d39476bedc8926.scn"
 
 [deps]
 
-source_file="res://models/yellow-tree.glb"
-dest_files=["res://.godot/imported/yellow-tree.glb-4b9504674e7f01fdd5a23555c2287c69.scn"]
+source_file="res://models/farmland.glb"
+dest_files=["res://.godot/imported/farmland.glb-5660fac5fcbc770a49d39476bedc8926.scn"]
 
 [params]
 
-nodes/root_type="Node3D"
-nodes/root_name="YellowTree"
+nodes/root_type=""
+nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
