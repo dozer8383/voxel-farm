@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://b6j7tylu6tggr"]
+
+[ext_resource type="PackedScene" uid="uid://dit414w24ys6h" path="res://models/red-tree.glb" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://mtclhuybqocx" path="res://textures/sky.png" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://5x7wq0jdpkcn" path="res://models/yellow-tree.glb" id="3_lquwl"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7mycd"]
+panorama = ExtResource("2_1bvp3")
+
+[sub_resource type="Sky" id="Sky_272bh"]
+sky_material = SubResource("PanoramaSkyMaterial_7mycd")
+
+[sub_resource type="Environment" id="Environment_5vw27"]
+background_mode = 2
+sky = SubResource("Sky_272bh")
+ambient_light_source = 3
+ambient_light_color = Color(0, 0.443137, 1, 1)
+reflected_light_source = 2
+tonemap_mode = 3
+sdfgi_use_occlusion = true
+volumetric_fog_density = 0.01
+volumetric_fog_anisotropy = 0.9
+volumetric_fog_length = 2.85
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kek77"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c57u"]
+albedo_color = Color(0, 0.533142, 0.258237, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.32509, 0, 0.945683, 0, 1, 0, -0.945683, 0, 0.32509, 4.68519, 0.603025, 2.55128)
+
+[node name="RedTree" parent="." instance=ExtResource("1_h2yge")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5vw27")
+
+[node name="yellow-tree" parent="." instance=ExtResource("3_lquwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.93122)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("PlaneMesh_kek77")
+skeleton = NodePath("../yellow-tree")
+surface_material_override/0 = SubResource("StandardMaterial3D_4c57u")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.624239, -0.643753, 0.442615, 0.0772438, 0.512923, 0.854952, -0.777406, 0.567884, -0.27046, 4.68519, 2.6708, 2.55128)
+shadow_enabled = true
