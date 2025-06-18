@@ -82,3 +82,4 @@ shape = SubResource("BoxShape3D_d6bvg")
 [node name="wheat" parent="." instance=ExtResource("5_vra4g")]
 
 [node name="sprouts" parent="." instance=ExtResource("6_xlp04")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
