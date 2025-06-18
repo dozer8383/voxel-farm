@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d34oc5nhx3qex"
-path.s3tc="res://.godot/imported/yellow-tree_yellow-tree-albedo.png-a88c1cbee891647000547fce17efe019.s3tc.ctex"
+uid="uid://ggyf6l0q5o3n"
+path.s3tc="res://.godot/imported/wheat_wheat-albedo.png-0b913a3b4420ec440ef8e6c93989c0fd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "67effdbe568c4fd2d7267f1c71b522ec"
+"md5": "2da520dc0a28637e01f7c0ca5cddcddf"
 }
 
 [deps]
 
-source_file="res://models/yellow-tree_yellow-tree-albedo.png"
-dest_files=["res://.godot/imported/yellow-tree_yellow-tree-albedo.png-a88c1cbee891647000547fce17efe019.s3tc.ctex"]
+source_file="res://models/wheat_wheat-albedo.png"
+dest_files=["res://.godot/imported/wheat_wheat-albedo.png-0b913a3b4420ec440ef8e6c93989c0fd.s3tc.ctex"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d34oc5nhx3qex"
-path.s3tc="res://.godot/imported/yellow-tree_yellow-tree-albedo.png-a88c1cbee891647000547fce17efe019.s3tc.ctex"
+uid="uid://bl4q4dh66n40p"
+path.s3tc="res://.godot/imported/carrot_carrot-leaf-albedo.png-ae4bfa9d2d9252c69c9ddf95d00b07a3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "67effdbe568c4fd2d7267f1c71b522ec"
+"md5": "6cc705dc584d0e0172d801879ac7a2f5"
 }
 
 [deps]
 
-source_file="res://models/yellow-tree_yellow-tree-albedo.png"
-dest_files=["res://.godot/imported/yellow-tree_yellow-tree-albedo.png-a88c1cbee891647000547fce17efe019.s3tc.ctex"]
+source_file="res://models/carrot_carrot-leaf-albedo.png"
+dest_files=["res://.godot/imported/carrot_carrot-leaf-albedo.png-ae4bfa9d2d9252c69c9ddf95d00b07a3.s3tc.ctex"]
 
 [params]
 
